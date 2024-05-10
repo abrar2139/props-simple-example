@@ -1,3 +1,5 @@
+This is a simple example of props, in this i make a book component and use it in books component and put data by using props in book component that is imported in books component and the data i puts in book component is comming from an array that is also imported in books compnent. also i use spread(...) and map method to spreed and for use of complete data of an array.This is very simple and you can learn it by practice.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
