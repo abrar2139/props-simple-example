@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+ border-radius: 20px;
+text-align: center;
+height: 400px;
+border: 3px solid brown;
+overflow: hidden;
+width: 100%;
+}
+.card img{
+    height: 55%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+h1::before{
+    content: '"';
+    color: yellow;
+}
+h1::after{
+    content: '"';
+    color: yellow;
+}
+h1{
+    animation:hover 2s infinite linear alternate ;
+    cursor: pointer;
+    
+}
+h1:hover{
+    animation: none;
+}
+@keyframes hover {
+   0%{
+    text-shadow: none;
+   } 
+   50%{
+    text-shadow: 0 0 10px #b5651d, 0 0 20px #b5651d, 0 0 30px #b5651d, 0 0 40px #b5651d, 0 0 70px #b5651d, 0 0 80px #b5651d, 0 0 100px #b5651d, 0 0 150px #b5651d;
+   }
+   100%{
+    text-shadow: none;
+   } 
+}
+.card h2{
+    color: brown;
+    margin-top: 20px;
+}
+.card p{
+    margin-top: 20px;
+    color: blue;
+    font-size: 18px;
+}
+.card p::after{
+    content: '"';
+}
+.card p::before{
+content: '"';
+}
+
+@media (max-width:900px) {
+    .books{
+        height: 200vh !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(1,95%) !important;
+        grid-template-rows:repeat(3,1fr) ;
+    }
+    .book{
+        width: 100%;
+    }
+    .card img{
+        height: 50%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
